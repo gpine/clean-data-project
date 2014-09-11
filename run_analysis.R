@@ -66,5 +66,9 @@
   colnames(tidy2) <- tempNames
   tidy2 <- tidy2[order(tidy2[,1],tidy2[,2]),]
   
+  # Change the variable names to reflect that they're averages
+  colnames(tidy2) <- sub("Fast Fourier","Mean fast Fourier",colnames(tidy2))
+  colnames(tidy2) <- sub("Time domain","Mean time domain",colnames(tidy2))
+
   # Write the averages data to a file
   write.table(tidy2, file = "tidy2.csv", sep = ",", row.names = FALSE)
