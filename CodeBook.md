@@ -9,7 +9,8 @@ Files:
 Variables:
 ==============================
 Vaiables in tidy1.csv are below. For tidy2.csv, variables 1 and 2 are the same as below, and variables 3-68 are the same, except with the word "Mean" in front (and the words "Time" and "Fast" decapitalized) -- this reflects that the values in tidy2.csv are 
-
+1. Subject ID
+2. Activity label
 tidy1.csv variables:
 1.	Subject ID
     30 volunteers within an age bracket of 19-48 years.
