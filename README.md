@@ -9,9 +9,10 @@ DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
-==================================================================
+
 
 The R script, run_analysis.R, reads in the following files using read.table:
+==================================================================
 
 - 'features.txt': List of all features.
 
@@ -29,6 +30,7 @@ The R script, run_analysis.R, reads in the following files using read.table:
 
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
+**Note**: Working directory must have Samsung data in it for the script to work. 'features.txt', for example, should be a file in the working directory.
 
 The script then manipulates the 'train' and 'test' data in the following way to create the file tidy1.txt:
 ======================================
@@ -79,6 +81,7 @@ mean and standard deviation measurements from tidy1.txt
 Notes: 
 ======
 - Features are normalized and bounded within [-1,1].
+- Again, working directory must have Samsung data in it for script to work. features.txt, for example, should be a file in the working directory.
 
 License:
 ========
