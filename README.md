@@ -51,7 +51,8 @@ The script then manipulates the tidy1 table in the following way to create the f
 4. uses unique function to remove duplicates.
 5. uses cast function to put the data back to its original shape. 
 6. orders the data by "Subject ID" and then by "Activity label" using the order function
-7. writes the data using write.table to a comma-separated .csv file called tidy2.txt
+7. renames the variables using sub function to reflect that they're averages
+8. writes the data using write.table to a comma-separated .csv file called tidy2.txt
 
 ==================================================================
 In sum, the R script, run_analysis.R -- after reading in the files above and performing the above actions -- has written two files: 
