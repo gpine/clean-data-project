@@ -3,12 +3,12 @@ Code Book
 
 Data:
 ==============================
-- 'tidy1.csv': a tidy version of the Samsung data (see below for details about that data).
-- 'tidy2.csv': a condensed version of tidy1.csv that contains only the averages among each Subject ID/Activity label pair for each activity.
+- 'tidy1.txt': a tidy version of the Samsung data (see below for details about that data).
+- 'tidy2.txt': a condensed version of tidy1.txt that contains only the averages among each Subject ID/Activity label pair for each activity.
 
-Variables for tidy1.csv:
+Variables for tidy1.txt:
 ==============================
-Vaiables in tidy1.csv are below. For tidy2.csv, variables 1 and 2 are the same as below, and variables 3-68 are the same, except with the word "Mean" in front (and the words "Time" and "Fast" decapitalized) -- this reflects that the values in tidy2.csv are averages for each subject/activity pair.
+Vaiables in tidy1.txt are below. For tidy2.txt, variables 1 and 2 are the same as below, and variables 3-68 are the same, except with the word "Mean" in front (and the words "Time" and "Fast" decapitalized) -- this reflects that the values in tidy2.txt are averages for each subject/activity pair.
 
 Subject ID and Activity label variables
 ------------------------------
@@ -41,7 +41,7 @@ The set of variables that were estimated from these signals are:
 'mean': Mean value
 'standard deviation': Standard deviation
 
-** Here is the list of feature variables from tidy1.csv. Note 1: All feature variables are normalized and bounded within [-1,1]**    
+** Here is the list of feature variables from tidy1.txt. Note 1: All feature variables are normalized and bounded within [-1,1]**    
 
 1.	Time domain body acceleration mean on the X axis
 2.	Time domain body acceleration mean on the Y axis
@@ -110,11 +110,11 @@ The set of variables that were estimated from these signals are:
 65.	Fast Fourier transformed body gyroscopic jerk magnitude mean
 66.	Fast Fourier transformed body gyroscopic jerk magnitude standard deviation
 
-Variables for tidy2.csv:
+Variables for tidy2.txt:
 ==============================
-As noted above, tidy2.csv is a condensed version of tidy1.csv that contains only the averages among each Subject ID/Activity label pair for each activity. tidy2.csv thus has far fewer *rows* than tidy1.csv. *All other variable information is the same as tidy1.csv*, but the feature variable names are slightly changed.
+As noted above, tidy2.txt is a condensed version of tidy1.txt that contains only the averages among each Subject ID/Activity label pair for each activity. tidy2.txt thus has far fewer *rows* than tidy1.txt. *All other variable information is the same as tidy1.txt*, but the feature variable names are slightly changed.
 
-** Here is the list of feature variables from tidy2.csv. Note 1: All feature variables are normalized and bounded within [-1,1]**    
+** Here is the list of feature variables from tidy2.txt. Note 1: All feature variables are normalized and bounded within [-1,1]**    
 1.	Mean time domain body acceleration mean on the X axis
 2.	Mean time domain body acceleration mean on the Y axis
 3.	Mean time domain body acceleration mean on the Z axis
@@ -184,10 +184,10 @@ As noted above, tidy2.csv is a condensed version of tidy1.csv that contains only
 
 Other relevant information
 ==============================
-The data in tidy1.csv and tidy2.csv is transformed from the Human Activity Recognition Using Smartphones Dataset
+The data in tidy1.txt and tidy2.txt is transformed from the Human Activity Recognition Using Smartphones Dataset
 Version 1.0 dataset. That data's variables are described in in its own files, 'features_info.txt' and 'README.txt'. This tidying project made several transformations. 
 
-For tidy1.csv
+For tidy1.txt
 - renames the single column from y_train.txt and y_test.txt to "Activity label".
 - renames the single column from subject_train.txt and subject_test.txt to "Subject ID".
 - renames the columns from x_train.txt and x_test.txt to the corresponding row value from features.txt. 
@@ -198,7 +198,7 @@ For tidy1.csv
 - changes the numeric values in the 'Activity label' column to the matching character values from activity_labels.txt.
 - puts the variable names into a human-readable form.
 
-For tidy2.csv
+For tidy2.txt
 
 - begins with tidy1 data
 - calculates the average among each Subject ID/Activity label pair for each activity
