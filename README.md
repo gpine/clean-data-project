@@ -30,7 +30,7 @@ The R script, run_analysis.R, reads in the following files using read.table:
 
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-**Note**: Working directory must have Samsung data in it for the script to work. 'features.txt', for example, should be a file in the working directory.
+**Note**: Working directory must have Samsung data in it for the script to work. 'features.txt', for example, should be a file in the working directory (and not a subfolder of the working directory).
 
 The script then manipulates the 'train' and 'test' data in the following way to create the file tidy1.txt:
 ======================================
