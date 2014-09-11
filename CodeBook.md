@@ -41,8 +41,8 @@ The set of variables that were estimated from these signals are:
 'mean': Mean value
 'standard deviation': Standard deviation
 
-**Note: All feature variables are normalized and bounded within [-1,1].**
-Here is the list:
+**Note: All feature variables are normalized and bounded within [-1,1]**    
+
 1.	Time domain body acceleration mean on the X axis
 2.	Time domain body acceleration mean on the Y axis
 3.	Time domain body acceleration mean on the Z axis
