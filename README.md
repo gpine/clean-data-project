@@ -30,7 +30,7 @@ The R script, run_analysis.R, reads in the following files using read.table:
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 
-The script then manipulates the 'train' and 'test' data in the following way to create the file tidy1.csv:
+The script then manipulates the 'train' and 'test' data in the following way to create the file tidy1.txt:
 ======================================
 1. renames the single column from y_train.txt and y_test.txt to "Activity label".
 2. renames the single column from subject_train.txt and subject_test.txt to "Subject ID".
@@ -41,9 +41,9 @@ The script then manipulates the 'train' and 'test' data in the following way to 
 7. changes the numeric values in the 'Activity label' column to the matching character values from activity_labels.txt.
 8. uses sub and gsub functions to clean up the variable names and put them into a human-readable form. See the attached codebook for the list of variable names.
 9. orders the data by "Subject ID" and then by "Activity label" using the order function
-10. writes the data using write.table to a comma-separated .csv file called tidy1.txt
+10. writes the data using write.table to a text file called tidy1.txt
 
-The script then manipulates the tidy1 table in the following way to create the file tidy2.csv:
+The script then manipulates the tidy1 table in the following way to create the file tidy2.txt:
 ======================================
 1. uses gsub to remove spaces from the column names, which helped when using the ddply command (see step 3 below)
 2. melts the data into long, skinny form using the melt function.
@@ -52,29 +52,29 @@ The script then manipulates the tidy1 table in the following way to create the f
 5. uses cast function to put the data back to its original shape. 
 6. orders the data by "Subject ID" and then by "Activity label" using the order function
 7. renames the variables using sub function to reflect that they're averages
-8. writes the data using write.table to a comma-separated .csv file called tidy2.txt
+8. writes the data using write.table to a text file called tidy2.txt
 
 ==================================================================
 In sum, the R script, run_analysis.R -- after reading in the files above and performing the above actions -- has written two files: 
 
-- 'tidy1.csv': a tidy version of the Samsung data.
-- 'tidy2.csv': a condensed version of tidy1.csv that contains only the averages among each Subject ID/Activity label pair for each activity.
+- 'tidy1.txt': a tidy version of the Samsung data.
+- 'tidy2.txt': a condensed version of tidy1.txt that contains only the averages among each Subject ID/Activity label pair for each activity.
 
-For each record of tidy1.csv it is provided:
+For each record of tidy1.txt it is provided:
 ======================================
 
 - Subject ID
 - Activity Label
 - 66 measurements pertaining to mean and standard deviation
 
-For each record of tidy2.csv it is provided:
+For each record of tidy2.txt it is provided:
 ======================================
 
 - Subject ID
 - Activity Label
 - 66 measurements pertaining to means, for each subject/activity pair, of the 
 
-mean and standard deviation measurements from tidy1.csv
+mean and standard deviation measurements from tidy1.txt
 
 Notes: 
 ======
