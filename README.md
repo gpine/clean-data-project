@@ -32,7 +32,7 @@ The R script, run_analysis.R, reads in the following files using read.table:
 
 The script then manipulates the 'train' and 'test' data in the following way to create the file tidy1.csv:
 ======================================
-1. renames the single column from x_train.txt and y_train.txt to "Activity label".
+1. renames the single column from y_train.txt and y_test.txt to "Activity label".
 2. renames the single column from subject_train.txt and subject_test.txt to "Subject ID".
 3. renames the columns from x_train.txt and x_test.txt to the corresponding row value from features.txt. 
 4. uses grep to select only those x_train/x_test variables ending with 'mean ()' and 'std()'. This decision comes from the features_info.txt file, which explains that mean() refers to "Mean value" and std() refers to "Standard deviation." By design, the grep does not search for the additional vectors obtained by averaging the signals in a signal window sample (gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean).
