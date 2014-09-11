@@ -37,7 +37,7 @@ The script then manipulates the 'train' and 'test' data in the following way to 
 3. renames the columns from x_train.txt and x_test.txt to the corresponding row value from features.txt. 
 4. uses grep to select only those x_train/x_test variables ending with 'mean ()' and 'std()'. This decision comes from the features_info.txt file, which explains that mean() refers to "Mean value" and std() refers to "Standard deviation." By design, the grep does not search for the additional vectors obtained by averaging the signals in a signal window sample (gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean).
 5. uses cbind to merge the "Subject ID" and "Activity label" columns to the left side of the x_train and x_test data tables. The train and test tables now have the following columns:| "Subject ID" | "Activity label" | Columns of features variables
-6. uses rbind to place put the test data below the train data. The two tables are now merged.
+6. uses rbind to put the test data below the train data. The two tables are now merged.
 7. changes the numeric values in the 'Activity label' column to the matching character values from activity_labels.txt.
 8. uses sub and gsub functions to clean up the variable names and put them into a human-readable form. See the attached codebook for the list of variable names.
 9. orders the data by "Subject ID" and then by "Activity label" using the order function
