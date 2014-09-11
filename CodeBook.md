@@ -13,9 +13,17 @@ Vaiables in tidy1.csv are below. For tidy2.csv, variables 1 and 2 are the same a
 tidy1.csv variables:
 =================================
 1.	Subject ID
-    30 volunteers within an age bracket of 19-48 years.
-    1..30
+    * 30 volunteers within an age bracket of 19-48 years.
+    * 1,2,3,...,30
 2.	Activity label
+    * The name of each activity
+    * Note that this variable has been modified from the original data set, in which the values were an integer from 1 to 6. 
+        * WALKING
+        * WALKING_UPSTAIRS
+        * WALKING_DOWNSTAIRS
+        * SITTING
+        * STANDING
+        * LAYING
 3.	Time domain body acceleration mean on the X axis
 4.	Time domain body acceleration mean on the Y axis
 5.	Time domain body acceleration mean on the Z axis
