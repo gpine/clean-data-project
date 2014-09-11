@@ -114,7 +114,7 @@ Variables for tidy2.txt:
 ==============================
 As noted above, tidy2.txt is a condensed version of tidy1.txt that contains only the averages among each Subject ID/Activity label pair for each activity. tidy2.txt thus has far fewer *rows* than tidy1.txt. *All other variable information is the same as tidy1.txt*, but the feature variable names are slightly changed.
 
-** Here is the list of feature variables from tidy2.txt. Note 1: All feature variables are normalized and bounded within [-1,1]**    
+** Here is the list of feature variables from tidy2.txt. Note 1: All feature variables are normalized and bounded within [-1,1]**     
 1.	Mean time domain body acceleration mean on the X axis
 2.	Mean time domain body acceleration mean on the Y axis
 3.	Mean time domain body acceleration mean on the Z axis
