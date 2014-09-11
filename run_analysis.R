@@ -52,7 +52,7 @@
   tidy1 <- appended[order(appended[,1],appended[,2]),]
   
   # Write the data to a file named tidy1.txt
-  write.table(tidy1, file = "tidy1.csv", sep = ",", row.names = FALSE)
+  write.table(tidy1, file = "tidy1.txt", sep = " ", row.names = FALSE)
   
   # Reshape the data and then calculate averages
   tempNames <- colnames(appended)
@@ -65,10 +65,10 @@
   tidy2 <- dcast(uniqued, SubjectID + Activitylabel ~ variable, value.var="summ")
   colnames(tidy2) <- tempNames
   tidy2 <- tidy2[order(tidy2[,1],tidy2[,2]),]
-  
+
   # Change the variable names to reflect that they're averages
   colnames(tidy2) <- sub("Fast Fourier","Mean fast Fourier",colnames(tidy2))
   colnames(tidy2) <- sub("Time domain","Mean time domain",colnames(tidy2))
-
+  
   # Write the averages data to a file
-  write.table(tidy2, file = "tidy2.csv", sep = ",", row.names = FALSE)
+  write.table(tidy2, file = "tidy2.txt", sep = " ", row.names = FALSE)
